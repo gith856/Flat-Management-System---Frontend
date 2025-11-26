@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getConfig } from "./axiosConfig.js";
 
-const API = "http://localhost:5000/api"
+const API = "https://flat-management-system-backend.onrender.com/api"
 
 export const getPendingFlats = ()=>
     axios.get(`${API}/admin/flats/pending`,getConfig())

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getConfig } from "./axiosConfig.js";
 
-const API = "http://localhost:5000/api"
+const API = "https://flat-management-system-backend.onrender.com/api"
 //flats
 export const createFlat = (flatData)=>{
     axios.post(`${API}/flat/createFlat`,flatData,getConfig())
