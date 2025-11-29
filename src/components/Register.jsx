@@ -18,7 +18,7 @@ const Register = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/auth/register',
+        'https://flat-management-system-backend.onrender.com/api/auth/register',
         { name, email, password, phoneNo, address, pincode },
         { headers: { 'Content-Type': 'application/json' } }
       );
